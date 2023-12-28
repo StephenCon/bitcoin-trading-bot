@@ -1,18 +1,32 @@
-Cryptocurrency Trading Bot
-Overview
-This is a simple cryptocurrency trading bot that leverages the Coinbase Pro API to execute trading strategies. The bot is designed to fetch historical price data, apply trading strategies, and execute buy/sell orders based on the chosen strategy.
+# Cryptocurrency Trading Bot
 
-Features
-Fetch historical price data for cryptocurrency trading pairs.
-Implement various trading strategies, including Simple Moving Average (SMA).
-Execute market orders based on strategy signals.
-Configuration options for API credentials, trading pairs, and quantities.
-Getting Started
-Clone this repository to your local machine:
+## Overview
 
-bash
-Copy code
-git clone https://github.com/your-username/crypto-trading-bot.git
+This repository contains a cryptocurrency trading bot that utilizes the Coinbase Pro API for executing trading strategies. The bot is designed to fetch historical price data, apply trading strategies, and execute buy/sell orders based on the chosen strategy.
+
+## Features
+
+- Fetch historical price data for cryptocurrency trading pairs.
+- Implement various trading strategies, including Simple Moving Average (SMA).
+- Execute market orders based on strategy signals.
+- Configuration options for API credentials, trading pairs, and quantities.
+
+## Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Python 3.7 or higher installed on your system.
+- Git for cloning the repository.
+
+### Installation
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/crypto-trading-bot.git
+
 Install the required Python packages:
 
 bash
