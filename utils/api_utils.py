@@ -8,6 +8,17 @@ import requests
 from config import settings
 
 def coinbase_pro_request(method, path, body=''):
+    """
+    Send an authenticated request to the Coinbase Pro API.
+
+    Args:
+        method (str): The HTTP method for the request ('GET', 'POST', etc.).
+        path (str): The API endpoint path.
+        body (str, optional): The request body (default is an empty string).
+
+    Returns:
+        Response: The response from the Coinbase Pro API.
+    """
     timestamp = str(time.time())
     message = timestamp + method + path + (body if body else '')
     hmac_key = base64.b64decode(settings.API_SECRET)
