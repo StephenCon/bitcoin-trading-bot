@@ -3,6 +3,7 @@
 from utils.api_utils import coinbase_pro_request
 from config import settings
 
+
 def execute_trade(signal, product_id, size):
     """
     Execute a market order on Coinbase Pro based on a trading signal.

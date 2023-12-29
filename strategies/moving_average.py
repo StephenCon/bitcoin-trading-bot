@@ -2,6 +2,7 @@
 
 import pandas as pd
 
+
 def calculate_sma(dataframe, period):
     """
     Calculate the Simple Moving Average (SMA) of a DataFrame.
@@ -14,6 +15,7 @@ def calculate_sma(dataframe, period):
         Series: A Pandas Series containing the SMA values.
     """
     return dataframe['close'].rolling(window=period).mean()
+
 
 def generate_signals(dataframe, sma_period):
     """

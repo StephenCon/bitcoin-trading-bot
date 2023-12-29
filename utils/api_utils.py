@@ -7,6 +7,7 @@ import base64
 import requests
 from config import settings
 
+
 def coinbase_pro_request(method, path, body=''):
     """
     Send an authenticated request to the Coinbase Pro API.
