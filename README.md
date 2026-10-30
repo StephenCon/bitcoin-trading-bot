@@ -1,65 +1,41 @@
-# Cryptocurrency Trading Bot
+# Multi-asset crypto trading platform
 
-## Overview
+A fresh-start project for researching, testing and eventually executing trading strategies across multiple cryptocurrencies.
 
-This repository contains a cryptocurrency trading bot that utilizes the Coinbase Pro API for executing trading strategies. The bot is designed to fetch historical price data, apply trading strategies, and execute buy/sell orders based on the chosen strategy.
+**Status: planning baseline. The new application has not been implemented.** The original Bitcoin / Coinbase Pro prototype is preserved in [legacy/coinbase-pro](legacy/coinbase-pro/) for reference. Its setup instructions and trading code do not describe the new application.
 
-## Features
+## Direction
 
-- Fetch historical price data for cryptocurrency trading pairs.
-- Implement various trading strategies, including Simple Moving Average (SMA).
-- Execute market orders based on strategy signals.
-- Configuration options for API credentials, trading pairs, and quantities.
+Build a system that can monitor multiple markets, compare opportunities, manage a shared portfolio and explain its decisions. Use numerical models for market predictions, language models for research and explanations, and deterministic code for portfolio limits and order execution.
 
-## Getting Started
+Sophistication is a development goal; profitability is an unproven hypothesis that must be evaluated after costs and against simple benchmarks.
 
-### Prerequisites
+## Proposed first release
 
-Before you begin, ensure you have met the following requirements:
+These are working defaults, not final investment or deployment decisions:
 
-- Python 3.7 or higher installed on your system.
-- Git for cloning the repository.
+- Simulated spot trading on one exchange.
+- A fixed initial universe of roughly 20–30 sufficiently liquid trading pairs, with adequate historical data.
+- A shared portfolio budget across all pairs; observing a coin does not require holding it.
+- A simple moving-average baseline, a machine-learning challenger and passive benchmarks.
+- Historical evaluation followed by forward testing with live market data and simulated orders.
+- A dashboard for signals, decisions, positions, execution, costs and portfolio performance.
+- Explicit limits enforced outside all models; keeping funds unallocated is a valid outcome.
 
-### Installation
+The exchange, exact markets, budget, risk thresholds, model providers, hosting and eventual trade-approval mode remain open. No live trading or funded exchange integration is part of this reset.
 
-1. Clone this repository to your local machine:
+## Read next
 
-   ```bash
-   git clone https://github.com/your-username/crypto-trading-bot.git
+| Document | Purpose |
+| --- | --- |
+| [Project brief](docs/PROJECT_BRIEF.md) | Product direction, proposed scope, trade-offs and unresolved decisions |
+| [Architecture](docs/ARCHITECTURE.md) | Component responsibilities, data flow and candidate foundations |
+| [Roadmap](docs/ROADMAP.md) | Ordered implementation milestones and acceptance criteria |
+| [Contributor instructions](AGENTS.md) | Guidance for implementing the fresh application |
+| [Legacy notes](legacy/README.md) | Original prototype, known defects and preservation details |
 
-Install the required Python packages:
+## Getting started
 
-bash
-Copy code
-pip install -r requirements.txt
-Configure your API credentials and trading parameters in the config/settings.py file:
+There is no new installation or start command yet. The first implementation milestone is the foundation and exchange-capability evaluation described in the roadmap. Add working setup instructions when that milestone lands.
 
-python
-Copy code
-# config/settings.py
-
-API_KEY = 'Your-API-Key'
-API_SECRET = 'Your-API-Secret'
-BASE_URL = 'https://api.pro.coinbase.com'
-
-# Trading parameters
-TRADE_SYMBOL = 'BTC-USD'
-TRADE_QUANTITY = 0.001
-Choose a trading strategy and customize its parameters in the corresponding strategy file (e.g., strategies/moving_average.py).
-
-Run the main trading bot script:
-
-bash
-Copy code
-python main.py
-Strategies
-This bot supports various trading strategies that can be found in the strategies folder. You can choose, customize, or create your own strategy by adding a new strategy module to the folder.
-
-Contributing
-Contributions are welcome! If you have ideas for improvements, feature requests, or bug reports, please open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Disclaimer
-This cryptocurrency trading bot is for educational and experimental purposes only. Use it with caution, and do not use real funds without thorough testing in a safe environment.
+Keep credentials, local configuration, account data, trained models and downloaded datasets out of Git. The repository currently has no licence file; the old README's MIT statement was unsupported and does not establish a licence for the new project.

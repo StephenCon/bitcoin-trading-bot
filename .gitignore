@@ -1,1 +1,33 @@
+# Secrets and local account configuration
+.env
+.env.*
+!.env.example
 config/settings.py
+legacy/coinbase-pro/config/settings.py
+config/local.*
+config/secrets.*
+
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local runtime data and generated artefacts
+runtime/
+user_data/
+artifacts/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# Editor and operating-system files
+.DS_Store
+.idea/
