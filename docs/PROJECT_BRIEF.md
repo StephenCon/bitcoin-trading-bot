@@ -6,7 +6,9 @@ Recorded: 30 October 2026.
 
 The owner wants to start again from the existing bitcoin-trading-bot repository and explore a substantially more capable system using advances in machine learning and language models. The scope includes multiple cryptocurrencies rather than a Bitcoin-only bot.
 
-This commit records the direction and implementation plan. It does not establish that a strategy is profitable, select an exchange or authorise live orders.
+The previous implementation has been removed from the current source tree at the owner's request. Build the new application from scratch using this plan.
+
+This plan does not establish that a strategy is profitable, select an exchange or authorise live orders.
 
 ## Product goal
 
@@ -66,7 +68,7 @@ Compare strategies over the same dates, starting funds, market universe and exec
 1. Uninvested cash in the selected quote currency.
 2. Buy-and-hold Bitcoin, where an accessible market and adequate data are available.
 3. A predefined equal-weight buy-and-hold basket from the selected universe.
-4. The original moving-average idea, reimplemented correctly.
+4. A simple moving-average strategy implemented as a transparent baseline.
 5. A machine-learning challenger.
 
 Report returns after fees, spread and slippage alongside maximum drawdown, volatility, turnover, exposure, trade count and execution failures. Include hosting, data and model costs in the operating-cost assessment. A higher gross return alone is insufficient evidence of improvement.
@@ -93,7 +95,7 @@ Paper fills are simulations. Differences from real queue position, liquidity and
 
 | Decision | Working position |
 | --- | --- |
-| Exchange and accessible products | Evaluate current support; Coinbase Advanced is a candidate because of the original project, not a commitment. |
+| Exchange and accessible products | Evaluate current support; Coinbase Advanced is one candidate, not a commitment. |
 | Framework | Compare Freqtrade/FreqAI with a smaller custom Python service before choosing. |
 | Exact assets and quote currency | Decide from market availability, history, liquidity, cost and account constraints. |
 | Model/provider | No provider selected; add a language model only for a measured use case. |

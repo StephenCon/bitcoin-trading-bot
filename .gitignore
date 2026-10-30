@@ -3,7 +3,6 @@
 .env.*
 !.env.example
 config/settings.py
-legacy/coinbase-pro/config/settings.py
 config/local.*
 config/secrets.*
 

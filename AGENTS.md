@@ -4,7 +4,7 @@
 
 Read README.md, docs/PROJECT_BRIEF.md, docs/ARCHITECTURE.md and docs/ROADMAP.md before implementation.
 
-This is a fresh multi-asset trading project. legacy/coinbase-pro/ is an archived prototype, not the application scaffold. Preserve it for reference and build the new application separately.
+This is a fresh multi-asset trading project. The owner requested removal of the previous implementation. Build the new application from scratch using the project brief and roadmap; do not restore the previous code or add an archive of it.
 
 Distinguish confirmed owner requirements from proposed defaults and unresolved choices. Do not silently select a funded account, numeric risk limits, model provider or live-trade approval policy.
 
@@ -41,4 +41,4 @@ Document actual setup commands when executable code exists. Keep roadmap status 
 
 Keep credentials, local account configuration, personal trading data, downloaded datasets and generated models out of Git. Use placeholders in examples and redact secrets from logs.
 
-Do not import the old prototype's claimed MIT licence into the new project: no licence file was present at reset. Licence selection remains an owner decision.
+No project licence has been selected. Licence selection remains an owner decision.

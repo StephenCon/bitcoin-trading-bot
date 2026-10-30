@@ -6,7 +6,7 @@ The owner requested a fresh start and a multi-asset direction. Milestones below 
 
 - [x] Record the multi-asset product direction and unresolved decisions.
 - [x] Define proposed components, evaluation standards and implementation milestones.
-- [x] Preserve the complete original prototype under legacy/coinbase-pro/.
+- [x] Remove the previous implementation and its archive from the current source tree at the owner's request.
 - [x] Replace the root README and add contributor guidance.
 
 Result: a documented starting point. No new trading application is implemented.

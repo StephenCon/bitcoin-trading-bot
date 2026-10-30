@@ -2,7 +2,7 @@
 
 A fresh-start project for researching, testing and eventually executing trading strategies across multiple cryptocurrencies.
 
-**Status: planning baseline. The new application has not been implemented.** The original Bitcoin / Coinbase Pro prototype is preserved in [legacy/coinbase-pro](legacy/coinbase-pro/) for reference. Its setup instructions and trading code do not describe the new application.
+**Status: planning baseline. The new application has not been implemented.** The repository contains the project plan and contributor guidance for a new implementation. The previous implementation has been removed from the current source tree.
 
 ## Direction
 
@@ -32,10 +32,9 @@ The exchange, exact markets, budget, risk thresholds, model providers, hosting a
 | [Architecture](docs/ARCHITECTURE.md) | Component responsibilities, data flow and candidate foundations |
 | [Roadmap](docs/ROADMAP.md) | Ordered implementation milestones and acceptance criteria |
 | [Contributor instructions](AGENTS.md) | Guidance for implementing the fresh application |
-| [Legacy notes](legacy/README.md) | Original prototype, known defects and preservation details |
 
 ## Getting started
 
 There is no new installation or start command yet. The first implementation milestone is the foundation and exchange-capability evaluation described in the roadmap. Add working setup instructions when that milestone lands.
 
-Keep credentials, local configuration, account data, trained models and downloaded datasets out of Git. The repository currently has no licence file; the old README's MIT statement was unsupported and does not establish a licence for the new project.
+Keep credentials, local configuration, account data, trained models and downloaded datasets out of Git. The project licence has not been selected.

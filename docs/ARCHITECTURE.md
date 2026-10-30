@@ -78,7 +78,7 @@ Documented limitation at planning time: FreqAI does not support pair lists that 
 
 Benefits: direct control over portfolio rules, exchange adapters and dashboard integration.
 
-Trade-offs: data validation, simulation, persistence, order lifecycle, retries and reconciliation all need implementation and meaningful tests. Use maintained exchange SDKs where appropriate rather than copying legacy request-signing code.
+Trade-offs: data validation, simulation, persistence, order lifecycle, retries and reconciliation all need implementation and meaningful tests. Use maintained exchange SDKs where appropriate for authentication and API access.
 
 Coinbase Advanced's official Python SDK is a candidate if Coinbase is selected. Its existence does not prove that a particular account, region or framework supports all desired products.
 
@@ -86,4 +86,4 @@ Coinbase Advanced's official Python SDK is a candidate if Coinbase is selected. 
 
 Choose the actual layout during the foundation milestone. Expected responsibilities are configuration, market data, universe selection, features/models, strategies, portfolio/risk, execution, persistence, reporting and a dashboard.
 
-Keep the new application separate from legacy/. Do not introduce empty packages, infrastructure or dependency files solely to imitate the old layout. Provide working setup and test commands with the first executable slice.
+Build the application from scratch around the selected stack. Add packages, infrastructure and dependency files as needed by working features. Provide working setup and test commands with the first executable slice.
